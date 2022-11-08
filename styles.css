@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:ital,wght@1,300&display=swap');
+
+/* * {
+    margin: 0;  задається спочатку для всього проєкту(всіх елементів)
+    padding: 0;
+} */
+
+
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font: bolder;
+    color: #0f141e;
+    background: #f1f1f1;
+}
+
+.conteiner {
+    max-width: 700px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+@media (max-width: 550px) {      /*адаптивная верстка . Добавь простые медиазапросы для адаптивной верстки твоего сайта. Например для максимальной ширина экрана в 550px.*/
+    .info {
+        text-align: center;
+        display: block;
+    }
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+
+.info-text p { 
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline wavy blueviolet;
+    color: #86898f;
+}
+
+.info-text {
+    margin: 20px;
+}
+
+.card {
+    /* border: 1px solid black; спочатку малювали і потім видалили*/ 
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+}
+
+a {
+    color: #333;
+    text-decoration: none; /* убрать подчеркивание*/
+}
+
+a:active {
+    color: rebeccapurple;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline; /* добавить подчеркивание*/
+}
+.card h2 {
+    margin-bottom: 20px;
+}
+
+.card_work {
+    border: 1px solid rosybrown;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.bg-blue h2 {
+    background: color #f1f1f9;
+    text-align: center; 
+}
+
+ol {
+    padding: 15px;
+}
+
+.bg-violet {
+    background-color: #fadadd;
+}
+
+textarea, input {
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    background-color: black;
+    padding: 20px 30px;
+    color: #c9c9c9;
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+.btn:hover {
+    opacity: .7; /*при наведении на кнпку меняет прозрачность(можно писать .8 или 0.8 - это одинаково*/
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(2), 
+.table td:nth-child(3) {
+    color: #86898f;
+    text-align: center;
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row .form-group {
+    /* width: calc(50% - 20px);
+    display: inline-block; */
+    margin-right: 20px;
+    width: 50%;
+}
+
+@media (max-width: 550px) {
+    .form-row {
+        display: block;
+    }
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color:  #86898f;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;  /* прозрачный фон*/
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;  /* забераем линию, которую при вводе текста появляется вокруг места для ввода текста*/
+    font-family: inherit;
+}
