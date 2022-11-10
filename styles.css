@@ -76,6 +76,7 @@ a:hover {
     color: green;
     text-decoration: underline; /* добавить подчеркивание*/
 }
+
 .card h2 {
     margin-bottom: 20px;
 }
@@ -86,7 +87,7 @@ a:hover {
     border-radius: 5px;
 }
 
-.bg-blue h2 {
+.bg h2 {
     background: color #f1f1f9;
     text-align: center; 
 }
@@ -95,8 +96,28 @@ ol {
     padding: 15px;
 }
 
+.bg-blue {
+    background-color: #e0ffff; 
+}
+
 .bg-violet {
     background-color: #fadadd;
+}
+
+.bg-yellow {
+    background-color: #f5f5dc;
+    border-radius: 5px;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0; 
+}
+
+.link-list li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
 }
 
 textarea, input {
